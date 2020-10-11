@@ -1,0 +1,169 @@
+
+/***************************** LAYOUT STYLES ********************************/
+
+html {
+    height: 100%; 
+    font-size: 16px;
+}
+
+body {
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    min-width: 480px;
+    background-color: #E5EFF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+
+/**************************** HEADER STYLES *****************************/
+.top {
+    padding-left: 20px;
+}
+
+.top h2 {
+    color: #239593;
+    padding-top: 20px;
+}
+
+.top h3 {
+    color: #C0DF34;
+}
+
+.top p {
+    color: #98A6BD;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+/******************************* MAIN STYLES ****************************/
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.mid, .mid2 {
+    width: 100%;
+}
+
+.mid {
+    background-color: #239593;
+    padding-left: 20px;
+}
+
+.mid h3 {
+    color: #ffffff;
+}
+
+.mid p {
+    display: flex;
+    align-items: center;
+    color: #98A6BD;
+}
+
+.mid p.white {
+    color: #ffffff;
+}
+
+.mid p span {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.mid p.button {
+    padding: 10px 0px;
+    margin-right: 20px;
+}
+
+.mid a {
+    border: 1px solid #C0DF34;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #C0DF34;
+    color: #ffffff;
+    width: 90%;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.mid a:hover {
+    background-color:#d6ea7b;
+}
+
+.mid2 {
+    background-color: #2cbab8;
+    padding-left: 20px;
+}
+
+.mid2 h3 {
+    color: #ffffff;
+}
+
+.mid2 p {
+    color: #d0d7e1;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+
+/****************************** FOOTER STYLES ***************************/
+
+footer {
+    background-color: #2cbab8;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+/******************* TABLET STYLES *************************************/
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        align-items: stretch;
+        flex-flow: row nowrap;
+    }
+
+    .mid {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .mid, .mid2 {
+        width: 50%;
+    }
+}
