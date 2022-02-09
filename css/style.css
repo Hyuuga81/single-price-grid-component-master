@@ -215,7 +215,11 @@ main {
         width: 87%;
     }
     .community h1 {
-        padding: 46px 0 34px 0;
+        padding: 33px 0;
+    }
+
+    .community p {
+        padding-bottom: 22px;
     }
 
     /********** MONTHLY SUB AND WHY US **********/
