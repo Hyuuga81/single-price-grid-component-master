@@ -26,7 +26,16 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 73px 0;
+    margin: 73px 0 20px 0;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 10px;
 }
 
 .container {
@@ -35,8 +44,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    border-radius: 5px;
     overflow: hidden;
+}
+
+main .container {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .lower {
@@ -46,6 +59,7 @@ main {
     align-items: center;
     flex-flow: row wrap;
 }
+
 /****************** COMMUNITY ******************/
 
 .community {
@@ -55,7 +69,7 @@ main {
     align-items: center;
     flex-flow: row wrap;
     background-color: #fff;
-    padding-bottom: 9px;
+    padding: 28px 0 32px 0;
 }
 
 .community .container {
@@ -67,26 +81,29 @@ main {
 }
 
 /* Community fonts */
-.community h1, .community p {
+.community h1,
+.community p {
     width: 100%;
 }
 
 .community h1 {
-    color: hsl(179, 62%, 43%);
-    padding: 33px 0;
-    font-size: 1.65em;
+    color: #2AB3B1;
+    margin: 0 0 24px 0;
+    font-size: 1.25em;
 }
 
-.sub-heading {
-    color: hsl(71, 73%, 54%);
-    font-size: 1.25em;
+.community h2 {
+    color: #C0DF33;
+    font-size: 0.938em;
+    line-height: 20px;
     font-weight: 700;
 }
 
 .community p {
     color: hsl(218, 22%, 67%);
-    padding-bottom: 30px;
-    line-height: 30px;
+    font-size: 0.875em;
+    line-height: 26px;
+    margin: 16px 0 0 0;
 }
 
 /*************** MONTHLY SUBSCRIPTION ***************/
@@ -97,7 +114,9 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: hsl(179, 62%, 43%);
+    background-color: #2AB3B1;
+    color: #e5eff5;
+    padding: 24px 0;
 }
 
 .monthly-sub .container {
@@ -108,53 +127,55 @@ main {
     flex-flow: row wrap;
 }
 
-.sentence-block {
+/* Monthly-sub fonts */
+.monthly-sub h2 {
+    width: 100%;
+}
+
+.monthly-sub h2 {
+    color: #FFFFFF;
+    margin: 0 0 18px 0;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.monthly-sub .sentence-block {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    padding-bottom: 15px;
 }
 
-/* Monthly-sub fonts */
-.monthly-sub h1, .monthly-sub p {
-    width: 100%;
+.sentence-block .left {
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.monthly-sub h1 {
-    color: hsl(204, 43%, 93%);
-    padding: 29px 0 26px 0;
-    font-size: 1.35em;
-}
-
-/*.monthly-sub*/ .sentence-block span {
-    font-size: 2.3em;
-    font-weight: 700;
-    color: hsl(204, 43%, 93%);
-}
-
-/*.monthly-sub*/ .sentence-block .right-side {
+.sentence-block .right {
     font-size: 1em;
-    font-weight: lighter;
-    color: hsl(204, 43%, 93%);
-    padding-left: 13px;
+    font-weight: normal;
+    margin-left: 11px;
+    opacity: 50%;
 }
 
-.monthly-sub {
-    /* font-size: 1.125em; */
-    color: hsl(204, 43%, 93%);
+.last {
+    width: 100%;
+    font-size: 1em;
+    line-height: 26px;
+    margin: 4px 0 26px 0;
 }
 
 .monthly-sub button {
     width: 100%;
-    padding: 18px 0;
-    font-size: 1.1em;
+    padding: 15px 0 14px 0;
+    font-size: 1em;
+    font-weight: 500;
+    /* letter-spacing: -0.2px; */
     border-radius: 5px;
-    border: 0 solid hsl(71, 73%, 54%);
-    margin: 33px 0 23px 0;
-    color: hsl(204, 43%, 93%);
-    background-color: hsl(71, 73%, 54%);
+    border: 0 solid #c0df33;
+    color: #fff;
+    background-color: #c0df33;
 }
 
 
@@ -167,6 +188,7 @@ main {
     align-items: center;
     flex-flow: row wrap;
     background-color: #4abebd;
+    padding: 24px 0;
 }
 
 .why-us .container {
@@ -177,66 +199,77 @@ main {
     flex-flow: row wrap;
 }
 
-.why-us h1, .why-us ul {
+.why-us h2,
+.why-us ul {
     width: 100%;
-    color: hsl(204, 43%, 93%);
+    color: #fff;
 }
 
-.why-us h1 {
-    color: hsl(204, 43%, 93%);
-    padding: 29px 0 26px 0;
-    font-size: 1.35em;
+.why-us h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.125em;
+    font-weight: 700;
 }
 
 .why-us ul {
-    padding-bottom: 29px;
-    font-size: 1em;
-    line-height: 22px;
+    font-size: 0.875em;
+    line-height: 20px;
+    opacity: 75%;
 }
 
-/********************* ATTRIBUTION *****************/
+/********************* FOOTER *****************/
 
-.attribution {
-    padding-bottom: 10px;
+footer p {
+    font-size: 0.75em;
 }
 
-/****************** DESKTOP STYLES ******************/
+footer a {
+    text-decoration: none;
+    color: blue;
+}
 
-@media (min-width: 1440px) {
-    /************ STRUCTURAL STYLES **************/
-    
-    .container {
-        width: 44%;
+/****************** TABLET STYLES ******************/
+
+@media (min-width: 768px) {
+
+    /* GENERAL STYLES */
+    main .container {
+        max-width: 672.3px;
+        border-radius: 5px;
     }
 
-    /***************** COMMUNITY *****************/
-
-    .community .container {
-        width: 87%;
+    /* COMMUNITY */
+    .community {
+        padding: 40px 0;
     }
+
     .community h1 {
-        padding: 33px 0;
+        font-size: 1.5em;
+    }
+
+    .community h2 {
+        font-size: 1.125em;
+        width: 100%;
     }
 
     .community p {
-        padding-bottom: 22px;
+        margin-top: 11px;
+        font-size: 1em;
     }
 
-    /********** MONTHLY SUB AND WHY US **********/
+    /* LOWER */
     .lower {
         align-items: stretch;
     }
 
-    .why-us .container, .monthly-sub .container {
-        width: 75%;
-    }
-
-    .monthly-sub, .why-us {
+    .monthly-sub,
+    .why-us {
         width: 50%;
-        align-items: flex-start;
+        padding: 40px 0;
     }
 
-    .monthly-sub h1, .why-us h1 {
-        padding: 44px 0 27px 0;
+    .monthly-sub .container,
+    .why-us .container {
+        width: 74.7%;
     }
 }
